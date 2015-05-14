@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>IAMDRUNK.COM</title>
+        <style>
+			body {
+			    position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				top:0px;
+				bottom:0px;
+				left: 0px;
+				right: 0px;
+			}
+			div {
+				height: 74px;
+				width: 428px;
+				background-image: url(IamDrunk.png);
+                background-position: 0% 100%;
+                margin-top:-24px;
+			}
+			.check {
+                background-position: 0% 0%;
+			}
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+			$('div').click(function() {
+				$(this).toggleClass('check');
+			});
+        </script>
+    </body>
+</html>
